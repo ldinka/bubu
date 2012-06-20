@@ -1,0 +1,82 @@
+*, html, body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    background: #F8F8F8;
+    color: #333;
+    font: normal 14px Tahoma, Arial, sans-serif;
+}
+button[type="submit"] {
+    background: #99369C;
+    border: 1px outset;
+    border-radius: 5px;
+    color: #FFF;
+    cursor: pointer;
+    margin: 5px 0 0 154px;
+    padding: 5px 15px;
+}
+button[type="submit"]:hover {
+    background: #D64FDA;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+h1 {
+    font-size: 24px;
+}
+fieldset {
+    border: 1px solid #CCCCCC;
+    padding: 10px 20px;
+}
+fieldset legend {
+    font-weight: bold;
+    padding: 0 5px;
+}
+fieldset p, #body fieldset p {
+    text-indent: 0;
+}
+input[type="text"], input[type="password"], textarea {
+    border: 1px solid #CCCCCC;
+    height: 21px;
+    padding: 2px;
+    width: 500px;
+}
+label {
+    display: inline-block;
+    vertical-align: top;
+    width: 150px;
+}
+li {
+    list-style: none;
+}
+p {
+    margin: 6px 0;
+}
+textarea {
+    height: 100px;
+}
+textarea#article_content {
+    height: 200px;
+}
+
+#content {
+    margin: 20px auto 100px;
+    width: 790px;
+}
+#header {
+    border-bottom: 1px solid #CCC;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+#body p {
+    line-height: 18px;
+    text-align: justify;
+    text-indent: 10px;
+}
+#articles li {
+    margin: 10px 0 30px;
+}
