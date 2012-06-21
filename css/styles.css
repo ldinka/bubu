@@ -117,6 +117,18 @@ textarea#article_content {
 .left {
     float: left;
 }
+.message,
+#body .message {
+    font-weight: bold;
+    text-indent: 0;
+}
+.message.error,
+.message.error a {
+    color: red;
+}
+.message.ok {
+    color: green;
+}
 .read_more {
 
 }
