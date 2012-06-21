@@ -50,16 +50,30 @@ fieldset legend {
 fieldset p, #body fieldset p {
     text-indent: 0;
 }
-input[type="text"], input[type="password"], textarea {
+input[type="text"],
+input[type="password"],
+textarea {
     border: 1px solid #CCCCCC;
     height: 21px;
     padding: 2px;
     width: 500px;
 }
+input[type="text"].error,
+input[type="password"].error,
+textarea.error {
+    border-color: red;
+}
 label {
     display: inline-block;
     vertical-align: top;
     width: 150px;
+}
+label.error {
+    color: red;
+    display: block;
+    font-size: 12px;
+    margin: 0 0 0 154px;
+    width: auto;
 }
 li {
     list-style: none;

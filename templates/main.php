@@ -23,7 +23,7 @@
 
 <fieldset>
     <legend>Добавить статью</legend>
-    <form action="add_article.php" method="post">
+    <form action="add_article.php" method="post" id="add_article">
         <p>
             <label for="article_author" class="">Автор <span class="required">*</span></label>
             <input type="text" name="article_author" id="article_author"/>
