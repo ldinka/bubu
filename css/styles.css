@@ -8,6 +8,9 @@ html, body {
     color: #333;
     font: normal 14px Tahoma, Arial, sans-serif;
 }
+a {
+    color: #8A183C;
+}
 button[type="submit"] {
     background: #99369C;
     border: 1px outset;
@@ -27,6 +30,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
     font-size: 24px;
+}
+h2 a {
+    color: #99369C;
+    text-decoration: none;
+}
+h2 a:hover {
+    color: #D64FDA;
+    text-decoration: underline;
 }
 fieldset {
     border: 1px solid #CCCCCC;
@@ -79,4 +90,25 @@ textarea#article_content {
 }
 #articles li {
     margin: 10px 0 30px;
+}
+.author,
+.date {
+    color: #888;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+.clear {
+    clear: both;
+}
+.left {
+    float: left;
+}
+.read_more {
+
+}
+.required {
+    color: red;
+}
+.right {
+    float: right;
 }
