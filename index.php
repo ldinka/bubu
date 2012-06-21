@@ -31,4 +31,4 @@ Template::showTemplate("main",
             "message"         => $message
         )
 );
-Template::showTemplate("footer");
+Template::showTemplate("footer", array("page" => "index"));

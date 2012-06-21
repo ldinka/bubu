@@ -11,4 +11,15 @@ jQuery(document).ready(function() {
             article_content: "Пожалуйста, введите текст статьи"
         }
     });
+
+    $("#login_form").validate({
+        rules: {
+            login:    "required",
+            password: "required"
+        },
+        messages: {
+            login:    "Пожалуйста, введите логин",
+            password: "Пожалуйста, введите пароль"
+        }
+    });
 });
