@@ -10,16 +10,21 @@ if ($_SESSION["access"]) {
     require_once("Template.php");
     require_once("Article.php");
 
-    /*$errors = 0;
-    if ($_POST["authorisation"] == 1) {
-        if (empty($_POST["login"]) ||
-            empty($_POST["password"]) ||
-            !(User::checkUser($_POST["login"], $_POST["password"]))) {
-            $errors = 1;
-        } else {
-            header("Location: ");
+    if ($_GET["what"] && is_numeric($_GET["article_id"])) {
+        $article_id = $_GET["article_id"];
+        switch ($_GET["what"]) {
+            case "approve":
+                Article::approveArticle($article_id);
+                break;
+            case "unapprove":
+                Article::approveArticle($article_id, 0);
+                break;
+            case "delete":
+                Article::deleteArticle($article_id);
+                break;
         }
-    }*/
+        header("Location: /moderation.php");
+    }
 
     Template::showTemplate("header", array("title" => "Модерирование", "page" => "moderation"));
     Template::showTemplate("moderation", array("articles" => Article::getArticleList(0)));
