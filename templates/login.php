@@ -3,6 +3,8 @@
 <?} elseif($message == "ok") {?>
 <p class="message ok">Доступ открыт.</p>
 <?}?>
+<p><a href="/">&lt;&lt; Вернуться</a></p>
+<p>&nbsp;</p>
 <form action="/admin.php" method="post" id="login_form">
     <fieldset>
         <legend>Авторизация</legend>
