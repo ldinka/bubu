@@ -135,6 +135,9 @@ textarea#article_content {
     margin-bottom: 10px;
     padding-bottom: 10px;
 }
+#vk_like {
+    clear: none !important;
+}
 
 .author,
 .date {
