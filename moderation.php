@@ -9,6 +9,7 @@ if ($_SESSION["access"]) {
     require_once("db_Mysql.php");
     require_once("Template.php");
     require_once("Article.php");
+    require_once("User.php");
 
     if ($_GET["what"] && is_numeric($_GET["article_id"])) {
         $article_id = $_GET["article_id"];
@@ -24,6 +25,9 @@ if ($_SESSION["access"]) {
                 break;
         }
         header("Location: /moderation.php");
+    } elseif ($_GET["what"] == "exit") {
+        User::exitUser();
+        header("Location: /");
     }
 
     Template::showTemplate("header", array("title" => "Модерирование", "page" => "moderation"));

@@ -26,4 +26,8 @@ jQuery(document).ready(function() {
     jQuery(".delete").click(function(){
         return confirm("Вы действительно хотите удалить этот объект?");
     });
+
+    jQuery(".exit").click(function(){
+        return confirm("Вы действительно хотите выйти?");
+    });
 });

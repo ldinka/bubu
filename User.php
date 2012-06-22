@@ -23,4 +23,8 @@ class User {
         }
         return false;
     }
+
+    public static function exitUser() {
+        session_destroy();
+    }
 }

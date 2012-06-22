@@ -1,3 +1,5 @@
+<p><a href="/moderation.php?what=exit" class="exit">Выход</a></p>
+<p>&nbsp;</p>
 <table>
     <tr>
         <th>Дата</th>
