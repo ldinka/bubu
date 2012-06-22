@@ -12,6 +12,7 @@
     <script type="text/javascript">
         VK.init({apiId: 3007914, onlyWidgets: true});
     </script>
+    <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
 </head>
 <body>
 

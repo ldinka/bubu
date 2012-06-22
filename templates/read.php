@@ -29,6 +29,9 @@
 VK.Widgets.Like("vk_like", {type: "mini", height: 20});
 </script>
 
+<!-- google+ -->
+<g:plusone size="Medium"></g:plusone>
+
 <div class="clear"></div>
 <p class="left author">Автор: <?=$article["article_author"]?></p>
 <p class="right date"><?=strftime("%e %b %Y", strtotime($article["article_date"]))?></p>
