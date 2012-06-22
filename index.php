@@ -23,7 +23,7 @@ if ($_POST["add_article"] == 1) {
 Template::showTemplate("header", array("title" => "Буферная бухта"));
 Template::showTemplate("main",
         array(
-            "articles"        => Article::getArticleList(0),
+            "articles"        => Article::getArticleList(),
             "errors"          => $errors,
             "article_author"  => $_POST["article_author"],
             "article_name"    => $_POST["article_name"], 

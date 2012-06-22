@@ -13,7 +13,7 @@ if ($_POST["authorisation"] == 1) {
         !(User::checkUser($_POST["login"], $_POST["password"]))) {
         $errors = 1;
     } else {
-        $message = "ok";
+        header("Location: /moderation.php");
     }
 }
 

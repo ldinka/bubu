@@ -16,6 +16,8 @@ class User {
             $user = array_shift($data);
             $db_password = $user["user_password"];
             if ($db_password == md5($password)) {
+                session_start();
+                $_SESSION["access"] = true;
                 return true;
             }
         }

@@ -22,4 +22,8 @@ jQuery(document).ready(function() {
             password: "Пожалуйста, введите пароль"
         }
     });
+
+    jQuery(".delete").click(function(){
+        return confirm("Вы действительно хотите удалить этот объект?");
+    });
 });

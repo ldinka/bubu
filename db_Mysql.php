@@ -34,6 +34,14 @@ class db_Mysql {
         mysql_query($query) or die("Ошибка запроса: " . mysql_error());
     }
 
+    public function updateData($query) {
+        mysql_query($query) or die("Ошибка запроса: " . mysql_error());
+    }
+
+    public function deleteData($query) {
+        mysql_query($query) or die("Ошибка запроса: " . mysql_error());
+    }
+
     public function safeData($query) {
         return mysql_real_escape_string($query);
     }

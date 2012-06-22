@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<div id="content">
+<div<?if($page=="moderation"){?> id="admin_area"<?}else{?> id="content"<?}?>>
     <div id="header">
         <h1><?=$title?></h1>
     </div>

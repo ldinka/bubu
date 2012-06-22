@@ -21,10 +21,11 @@ class Article {
                 article_name,
                 article_intro,
                 article_author,
-                article_date
+                article_date,
+                article_approved
             FROM articles
             WHERE article_approved = 1
-               OR article_approved = " . $approved . "
+               OR article_approved = $approved
             ORDER BY article_date DESC");
         return $data;
     }
@@ -66,4 +67,39 @@ class Article {
             )
         ");
     }
+
+    public static function approveArticle($article_id, $approved = 1) {
+        $db = db_Mysql::singleton();
+        $db->updateData("
+            UPDATE articles
+            SET article_approved = $approved
+            WHERE article_id = $article_id
+        ");
+    }
+
+    public static function deleteArticle($article_id) {
+        $db = db_Mysql::singleton();
+        $db->updateData("
+            DELETE FROM articles
+            WHERE article_id = $article_id
+        ");
+    }
+
+    public static function  getArticle($article_id) {
+        $db = db_Mysql::singleton();
+        $data = $db->getData("
+            SELECT
+                article_id,
+                article_name,
+                article_author,
+                article_date,
+                article_intro,
+                article_content,
+                article_approved
+            FROM articles
+            WHERE article_id = $article_id
+        ");
+        return $data;
+    }
+
 }
