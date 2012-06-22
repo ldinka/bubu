@@ -10,7 +10,7 @@
     <script type="text/javascript" src="/js/functions.js"></script>
     <script type="text/javascript" src="http://userapi.com/js/api/openapi.js?49"></script>
     <script type="text/javascript">
-        VK.init({apiId: 3007914, onlyWidgets: true});
+        VK.init({apiId: 3008190, onlyWidgets: true});
     </script>
     <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
 </head>
