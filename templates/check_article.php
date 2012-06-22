@@ -13,9 +13,9 @@
 <p>
     <strong>Действия:</strong>
     <?if($article["article_approved"]){?>
-    <a href="do.php?what=unapprove&article_id=<?=$article["article_id"]?>" class="space">Не&nbsp;публиковать</a>
+    <a href="moderation.php?what=unapprove&article_id=<?=$article["article_id"]?>" class="space">Не&nbsp;публиковать</a>
     <?}else {?>
-    <a href="do.php?what=approve&article_id=<?=$article["article_id"]?>">Опубликовать</a>
+    <a href="moderation.php?what=approve&article_id=<?=$article["article_id"]?>">Опубликовать</a>
     <?}?>
-    <a class="delete" href="do.php?what=delete&article_id=<?=$article["article_id"]?>">Удалить</a>
+    <a class="delete" href="moderation.php?what=delete&article_id=<?=$article["article_id"]?>">Удалить</a>
 </p>

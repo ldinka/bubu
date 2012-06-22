@@ -2,17 +2,6 @@
 
 class Article {
 
-    var $id;
-    var $author;
-    var $name;
-    var $intro;
-    var $content;
-    var $date;
-    var $approved;
-
-    private function __construct() {
-    }
-
     public static function getArticleList($approved = 1) {
         $db = db_Mysql::singleton();
         $data = $db->getData("
